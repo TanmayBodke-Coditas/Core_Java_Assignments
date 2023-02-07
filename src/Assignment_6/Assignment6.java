@@ -247,7 +247,7 @@ class Question8_3_2{
         }
     }
 }
-public class ControlStatements {
+public class Assignment6 {
     public static void main(String[] args) {
         System.out.println("----------OUTPUT OF QUE2------------") ;
         Question2 question2 = new Question2();
