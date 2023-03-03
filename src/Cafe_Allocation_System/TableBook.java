@@ -13,6 +13,8 @@ public class TableBook extends Thread {
 
     static boolean isBooked = false;
 
+
+
     public void run(){
         System.out.println("Enter Your name :: ");
         Scanner input = new Scanner(System.in);
