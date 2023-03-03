@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class TableBook extends Thread {
 
     String name = "";
-    int numberOfSeats = 0;
-    int tableFor2 = 8;
-    int tableFor4 = 4;
-    int tableFor6 = 2;
-    int  tableFor8 = 2;
+    static int numberOfSeats = 0;
+    static int tableFor2 = 8;
+    static int tableFor4 = 4;
+    static int tableFor6 = 2;
+    static int  tableFor8 = 2;
 
     static boolean isBooked = false;
 
