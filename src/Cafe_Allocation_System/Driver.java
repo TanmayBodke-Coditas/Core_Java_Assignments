@@ -42,8 +42,9 @@ public class Driver {
                     }else {
                         selectMenu.run();
                         selectMenu.join();
-                        customer1.isBooked = true;
+                        customer1.isBooked = false;
                     }
+
                     break;
             }
         }

@@ -16,6 +16,20 @@ public class TableBook extends Thread {
 
 
     public void run(){
+        System.out.println("---------------Availability of Tables--------------");
+        System.out.println("---------------------------------------------------");
+        System.out.println("| Maximum Occupancy  | Number of Tables Available |");
+        System.out.println("---------------------------------------------------");
+        System.out.println("| Max. Occupancy : 2 |"+"              " + tableFor2 + "             |");
+        System.out.println("---------------------------------------------------");
+        System.out.println("| Max. Occupancy : 4 |"+"              " + tableFor4 + "             |");
+        System.out.println("---------------------------------------------------");
+        System.out.println("| Max. Occupancy : 6 |"+"              " + tableFor6 + "             |");
+        System.out.println("---------------------------------------------------");
+        System.out.println("| Max. Occupancy : 8 |"+"              " + tableFor8 + "             |");
+        System.out.println("---------------------------------------------------");
+        System.out.println();
+
         System.out.println("Enter Your name :: ");
         Scanner input = new Scanner(System.in);
         name = input.next();

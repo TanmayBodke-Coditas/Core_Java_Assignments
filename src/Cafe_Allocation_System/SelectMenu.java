@@ -40,10 +40,12 @@ public class SelectMenu extends Thread {
         }
 
         if (!selectedItems.containsKey("Coffee")) {
+
             try {
                 throw new InvalidOrderException();
             } catch (InvalidOrderException e) {
                 System.out.println();
+
             }
         }
 
