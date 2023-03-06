@@ -45,7 +45,6 @@ public class SelectMenu extends Thread {
                 throw new InvalidOrderException();
             } catch (InvalidOrderException e) {
                 System.out.println();
-
             }
         }
 
@@ -68,20 +67,22 @@ public class SelectMenu extends Thread {
                 .forEachOrdered(entry -> sortedSelectedSubtotals.put(entry.getKey(), entry.getValue()));
 
         System.out.println();
-        System.out.println("--------------BILL OF YOUR ORDER--------------");
-        Random random = new Random();
-        int randomNumber = random.nextInt(100) + 1;
-        System.out.println("Bill No :: " + randomNumber);
-        double total = 0;
-        System.out.println("You have selected the following items:");
-        for (String item : sortedSelectedSubtotals.keySet()) {
-            int quantity = selectedItems.get(item);
-            double price = prices.get(item);
-            double subtotal = sortedSelectedSubtotals.get(item);
-            System.out.println(item + " x " + quantity + " - " + subtotal);
-            total += subtotal;
+        if(selectedItems.containsKey("Coffee")) {
+            System.out.println("--------------BILL OF YOUR ORDER--------------");
+            Random random = new Random();
+            int randomNumber = random.nextInt(100) + 1;
+            System.out.println("Bill No :: " + randomNumber);
+            double total = 0;
+            System.out.println("You have selected the following items:");
+            for (String item : sortedSelectedSubtotals.keySet()) {
+                int quantity = selectedItems.get(item);
+                double price = prices.get(item);
+                double subtotal = sortedSelectedSubtotals.get(item);
+                System.out.println(item + " x " + quantity + " - " + subtotal);
+                total += subtotal;
+            }
+            System.out.println("Total: " + total);
         }
-        System.out.println("Total: " + total);
 
 
 
