@@ -1,4 +1,4 @@
-package Assignment_23_JDBC.Question_3_Employee;
+package Assignment_23_JDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
